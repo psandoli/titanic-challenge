@@ -8,14 +8,14 @@ function Histogram({data, xAxisColumn, yAxisColumn}) {
             },   
         },
         plotOptions: {
-          bar: {
-            horizontal: false,
-            columnWidth: '100%'
-          },
+            bar: {
+                horizontal: false,
+                columnWidth: '100%'
+            },
         },
         title: {
-          text: 'Survivals per passenger class',
-          align: 'left',
+            text: 'Survivals per passenger class',
+            align: 'left',
         },
     }
 
