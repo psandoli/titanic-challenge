@@ -20,7 +20,28 @@ export const usePassengersData = () => {
         return Object.values(groupByAge);
     }
 
+    const getSurvivalsPerPClass = () => {
+        const groupByPClass = jsonFile.reduce((passengers, passenger) => {
+            const pClass = passenger.Pclass;
+            const survival = passenger.Survived
+
+            if (!passengers[pClass]) {
+                passengers[pClass] = {
+                    Pclass: pClass,
+                    survivals: 0,
+                };
+            }
+
+            if(survival) passengers[pClass].survivals++
+
+            return passengers;
+        }, {});
+
+        return Object.values(groupByPClass);
+    }
+
     return {
-        getFareByAge
+        getFareByAge,
+        getSurvivalsPerPClass
     }
 }
