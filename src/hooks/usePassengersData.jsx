@@ -1,8 +1,10 @@
 import jsonFile from './../data/passengers.json'
 
 export const usePassengersData = () => {
+    const data = jsonFile;
+
     const getFareByAge = () => {
-        const groupByAge = jsonFile.reduce((passengers, passenger) => {
+        const groupByAge = data.reduce((passengers, passenger) => {
             const age = Math.round(passenger.Age);
 
             if (!passengers[age]) {
@@ -21,7 +23,7 @@ export const usePassengersData = () => {
     }
 
     const getSurvivalsPerPClass = () => {
-        const groupByPClass = jsonFile.reduce((passengers, passenger) => {
+        const groupByPClass = data.reduce((passengers, passenger) => {
             const pClass = passenger.Pclass;
             const survival = passenger.Survived
 
@@ -41,6 +43,7 @@ export const usePassengersData = () => {
     }
 
     return {
+        data,
         getFareByAge,
         getSurvivalsPerPClass
     }
