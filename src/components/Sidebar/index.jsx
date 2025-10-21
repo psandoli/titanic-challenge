@@ -10,7 +10,7 @@ function Sidebar({chooseVisualization}) {
     const [ isSidebarOpen, setIsSidebarOpen ] = useState(false)
 
     const handleSidebarOpen = () => {
-        setIsSidebarOpen(true)
+        setIsSidebarOpen(!isSidebarOpen)
     } 
 
     const handleSidebarSelect = (e) => {
@@ -20,21 +20,23 @@ function Sidebar({chooseVisualization}) {
 
     return (
         <div className='sidebar'>
-        <button name="open-sidebar" onClick={handleSidebarOpen}>
+        <button className={`sidebar-button ${isSidebarOpen ? 'open' : 'closed'}`} name="open-sidebar" onClick={handleSidebarOpen}>
             <SidebarIcon/>
             <span>Select visualization</span>
         </button>
         { isSidebarOpen && (
-            <div className='sidebar-options'>
-            <button onClick={handleSidebarSelect} value={TABLE}>
-                Raw Table
-            </button>
-            <button onClick={handleSidebarSelect} value={LINE_GRAPH}>
-                Line Graph
-            </button>
-            <button onClick={handleSidebarSelect} value={HISTOGRAM}>
-                Histogram
-            </button>
+            <div className='sidebar-options-outter'>
+                <div className='sidebar-options'>
+                    <button onClick={handleSidebarSelect} value={TABLE}>
+                        Raw Table
+                    </button>
+                    <button onClick={handleSidebarSelect} value={LINE_GRAPH}>
+                        Line Graph
+                    </button>
+                    <button onClick={handleSidebarSelect} value={HISTOGRAM}>
+                        Histogram
+                    </button>
+                </div>
             </div>
         )}
         </div>

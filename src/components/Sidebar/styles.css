@@ -1,0 +1,40 @@
+.sidebar {
+    width: 100%;
+    background: #057fdb;
+    box-shadow: 10px 10px 10px #171a1c;
+}
+
+.sidebar-button {
+    background: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 8px;
+}
+
+.sidebar-button:hover, .sidebar-button:active, .sidebar-button:focus {
+    outline: none;
+}
+
+.sidebar-options-outter {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar-options {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+    background: #242424;
+    box-shadow: 10px 10px 10px #171a1c;
+}
+
+.open svg {
+    transform: rotateX(180deg);
+}
