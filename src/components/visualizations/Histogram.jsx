@@ -1,6 +1,6 @@
 import Chart from 'react-apexcharts'
 
-function Histogram({data, xAxisColumn, yAxisColumn}) {
+function Histogram({data, xAxisColumn, yAxisColumn, title}) {
     const options = {
         chart: {
             toolbar: {
@@ -14,7 +14,7 @@ function Histogram({data, xAxisColumn, yAxisColumn}) {
             },
         },
         title: {
-            text: 'Survivals per passenger class',
+            text: title,
             align: 'left',
             style: {
                 color: '#fff'

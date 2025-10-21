@@ -21,9 +21,9 @@ function App() {
         { selectedVisualization === TABLE ? (
           <Table data={data} />
         ) : selectedVisualization === LINE_GRAPH ? (
-          <LineGraph data={getFareByAge()} xAxisColumn={'Age'} yAxisColumn={'Fare'}/>
+          <LineGraph data={getFareByAge()} xAxisColumn={'Age'} yAxisColumn={'Fare'} title={'Passengers Fare by Age'}/>
         ) : selectedVisualization === HISTOGRAM ? (
-          <Histogram data={getSurvivalsPerPClass()} xAxisColumn={'Pclass'} yAxisColumn={'survivals'}/>
+          <Histogram data={getSurvivalsPerPClass()} xAxisColumn={'Pclass'} yAxisColumn={'survivals'} title={'Survivals per passenger class'}/>
         ) : (
           <span>
             Please, select a visualization in the sidebar.

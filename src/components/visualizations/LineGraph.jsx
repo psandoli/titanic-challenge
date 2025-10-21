@@ -1,6 +1,6 @@
 import Chart from 'react-apexcharts'
 
-function LineGraph({data, xAxisColumn, yAxisColumn}) {
+function LineGraph({data, xAxisColumn, yAxisColumn, title}) {
     const options = {
         chart: {
             toolbar: {
@@ -11,7 +11,7 @@ function LineGraph({data, xAxisColumn, yAxisColumn}) {
             curve: 'smooth'
         },
         title: {
-            text: 'Passengers Fare by Age',
+            text: title,
             align: 'left',
             style: {
                 color: '#fff'
