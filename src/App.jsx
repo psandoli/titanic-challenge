@@ -5,6 +5,7 @@ import Histogram from './components/visualizations/Histogram.jsx'
 import Sidebar from './components/Sidebar'
 import './App.css'
 import { usePassengersData } from './hooks/usePassengersData.jsx'
+import { ScrollToTopIcon } from './assets/icons/ScrollToTop.jsx'
 
 const TABLE = 'table'
 const LINE_GRAPH = 'lineGraph'
@@ -13,6 +14,13 @@ const HISTOGRAM = 'histogram'
 function App() {
   const { data, getFareByAge, getSurvivalsPerPClass } = usePassengersData()
   const [ selectedVisualization, setSelectedVisualization ] = useState('')
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
 
   return (
     <>
@@ -29,6 +37,9 @@ function App() {
             Please, select a visualization in the sidebar.
           </span>
         )}
+        <button className='scroll-to-top' onClick={scrollToTop}>
+          <ScrollToTopIcon />
+        </button>
       </div>
     </>
   )

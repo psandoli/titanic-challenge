@@ -6,16 +6,29 @@
 }
 
 .details { 
-  padding: 40px;
+  padding: 128px 24px 32px;
 }
 
 .apexcharts-text {
   fill: #fff;
 }
 
+.scroll-to-top {
+  position: fixed;
+  background: #065ea1;
+  padding: 4px;
+  bottom: 40px;
+  right: 40px;
+}
+
 @media screen and (max-width: 1024px) {
   .details { 
-    padding: 16px;
+    padding: 88px 16px 40px;
     overflow-x: scroll;
+  }
+
+  .scroll-to-top {
+    bottom: 16px;
+    right: 16px;
   }
 }
