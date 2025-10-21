@@ -1,0 +1,16 @@
+.raw-table th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+.raw-table thead tr {
+    background: #057fdb;
+}
+
+.raw-table tbody tr:nth-child(odd) {
+    background: #464646;
+}
+
+.raw-table tbody tr:nth-child(even) {
+    background: #2c2c2c;
+}

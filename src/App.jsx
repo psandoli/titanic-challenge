@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Table from './components/visualizations/Table.jsx'
+import Table from './components/visualizations/Table'
 import LineGraph from './components/visualizations/LineGraph.jsx'
 import Histogram from './components/visualizations/Histogram.jsx'
 import Sidebar from './components/Sidebar'

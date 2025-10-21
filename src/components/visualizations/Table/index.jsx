@@ -1,8 +1,10 @@
+import './styles.css'
+
 function Table({data}) {
     const header = Object.keys(data[0])
     
     return (
-        <table>
+        <table className='raw-table'>
             <thead>
                 <tr>
                     { header?.map((key) => (
