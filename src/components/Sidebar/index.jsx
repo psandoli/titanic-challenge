@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './styles.css'
-import { SidebarIcon } from '../../assets/icons/SidebarIcon.jsx'
+import { SidebarIcon } from '../../assets/icons/Sidebar.jsx'
 
 const TABLE = 'table'
 const LINE_GRAPH = 'lineGraph'
