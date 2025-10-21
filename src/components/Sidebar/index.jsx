@@ -20,25 +20,25 @@ function Sidebar({chooseVisualization}) {
 
     return (
         <div className='sidebar'>
-        <div className={`sidebar-button ${isSidebarOpen ? 'open' : 'closed'}`} name="open-sidebar" onClick={handleSidebarClick}>
-            <SidebarIcon/>
-            <span>Select visualization</span>
-        </div>
-        { isSidebarOpen && (
-            <div className='sidebar-options-outter' onClick={handleSidebarClick}>
-                <div className='sidebar-options'>
-                    <button onClick={handleSidebarSelect} value={TABLE}>
-                        Raw Table
-                    </button>
-                    <button onClick={handleSidebarSelect} value={LINE_GRAPH}>
-                        Line Graph
-                    </button>
-                    <button onClick={handleSidebarSelect} value={HISTOGRAM}>
-                        Histogram
-                    </button>
-                </div>
+            <div className={`sidebar-button ${isSidebarOpen ? 'open' : 'closed'}`} name="open-sidebar" onClick={handleSidebarClick}>
+                <SidebarIcon/>
+                <span>Select visualization</span>
             </div>
-        )}
+            { isSidebarOpen && (
+                <div className='sidebar-options-outter' onClick={handleSidebarClick}>
+                    <div className='sidebar-options'>
+                        <button onClick={handleSidebarSelect} value={TABLE}>
+                            Raw Table
+                        </button>
+                        <button onClick={handleSidebarSelect} value={LINE_GRAPH}>
+                            Line Graph
+                        </button>
+                        <button onClick={handleSidebarSelect} value={HISTOGRAM}>
+                            Histogram
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
