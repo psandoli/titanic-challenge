@@ -11,7 +11,7 @@ function LineGraph({data, xAxisColumn, yAxisColumn}) {
             curve: 'smooth'
         },
         title: {
-            text: 'Passengers Age x Fare',
+            text: 'Passengers Fare by Age',
             align: 'left',
             style: {
                 color: '#fff'
