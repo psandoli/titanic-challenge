@@ -12,11 +12,9 @@
     align-items: center;
     font-size: 18px;
     gap: 8px;
-}
-
-.sidebar-button:hover, .sidebar-button:active, .sidebar-button:focus {
-    outline: none;
-    border: none;
+    cursor: pointer;
+    height: 64px;
+    padding: 0 8px;
 }
 
 .open svg {

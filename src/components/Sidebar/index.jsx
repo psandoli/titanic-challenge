@@ -20,10 +20,10 @@ function Sidebar({chooseVisualization}) {
 
     return (
         <div className='sidebar'>
-        <button className={`sidebar-button ${isSidebarOpen ? 'open' : 'closed'}`} name="open-sidebar" onClick={handleSidebarClick}>
+        <div className={`sidebar-button ${isSidebarOpen ? 'open' : 'closed'}`} name="open-sidebar" onClick={handleSidebarClick}>
             <SidebarIcon/>
             <span>Select visualization</span>
-        </button>
+        </div>
         { isSidebarOpen && (
             <div className='sidebar-options-outter' onClick={handleSidebarClick}>
                 <div className='sidebar-options'>
