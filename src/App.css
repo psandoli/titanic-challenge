@@ -2,8 +2,13 @@
   width: 100%;
   height: 100vh;
   background: #242424;
+  color: #fff;
 }
 
 .details { 
   padding: 40px;
+}
+
+.apexcharts-text {
+  fill: #fff;
 }

@@ -13,7 +13,13 @@ function LineGraph({data, xAxisColumn, yAxisColumn}) {
         title: {
             text: 'Passengers Age x Fare',
             align: 'left',
+            style: {
+                color: '#fff'
+            }
         },
+        yaxis: {
+            decimalsInFloat: false,
+        }
     }
 
     const series =  [{

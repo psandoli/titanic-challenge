@@ -16,7 +16,10 @@ function Histogram({data, xAxisColumn, yAxisColumn}) {
         title: {
             text: 'Survivals per passenger class',
             align: 'left',
-        },
+            style: {
+                color: '#fff'
+            }
+        }
     }
 
     const series =  [{
