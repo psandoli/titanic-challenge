@@ -5,7 +5,7 @@
   color: #fff;
 }
 
-.details { 
+.details {
   padding: 88px 24px 32px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .details { 
+  .details {
     padding: 88px 16px 40px;
     overflow-x: scroll;
   }

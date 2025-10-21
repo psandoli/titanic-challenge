@@ -1,54 +1,56 @@
 .sidebar {
-    width: 100%;
-    background: #065ea1;
-    box-shadow: 10px 10px 10px #171a1c;
-    position: fixed;
-    z-index: 1;
+  width: 100%;
+  background: #065ea1;
+  box-shadow: 10px 10px 10px #171a1c;
+  position: fixed;
+  z-index: 1;
 }
 
 .sidebar-button {
-    background: none;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    gap: 8px;
-    cursor: pointer;
-    height: 64px;
-    padding: 0 8px;
+  background: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 8px;
+  cursor: pointer;
+  height: 64px;
+  padding: 0 8px;
 }
 
 .open svg {
-    transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 
 .sidebar-options-outter {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .sidebar-options {
-    height: 100%;    
-    min-width: 150px;
-    max-width: fit-content;
-    display: flex;
-    flex-direction: column;
-    padding: 16px 8px;
-    gap: 8px;
-    background: #242424;
-    box-shadow: 10px 10px 10px #171a1c;
+  height: 100%;
+  min-width: 150px;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 8px;
+  gap: 8px;
+  background: #242424;
+  box-shadow: 10px 10px 10px #171a1c;
 }
 
 .sidebar-options button {
-    padding: 8px 16px;
-    background: none;
-    border: none;
+  padding: 8px 16px;
+  background: none;
+  border: none;
 }
 
-.sidebar-options button:hover, .sidebar-options button:active, .sidebar-options button:focus {
-    background: #065ea1;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
-    border-radius: 4px;
+.sidebar-options button:hover,
+.sidebar-options button:active,
+.sidebar-options button:focus {
+  background: #065ea1;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
 }
