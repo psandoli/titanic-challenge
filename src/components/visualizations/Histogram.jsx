@@ -20,6 +20,9 @@ function Histogram({data, xAxisColumn, yAxisColumn, title}) {
                 color: '#fff'
             }
         },
+        tooltip: {
+            theme: 'dark',
+        },
         responsive: [{
             breakpoint: 1024,
             options: {

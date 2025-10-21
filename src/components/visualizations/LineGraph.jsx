@@ -17,6 +17,9 @@ function LineGraph({data, xAxisColumn, yAxisColumn, title}) {
                 color: '#fff'
             }
         },
+        tooltip: {
+            theme: 'dark',
+        },
         yaxis: {
             decimalsInFloat: false,
         },
