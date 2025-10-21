@@ -14,3 +14,9 @@
 .raw-table tbody tr:nth-child(even) {
     background: #2c2c2c;
 }
+
+@media screen and (max-width: 1024px) {
+    .raw-table th, td {
+        padding: 4px;
+    }
+}

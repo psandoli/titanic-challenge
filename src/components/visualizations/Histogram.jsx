@@ -19,7 +19,16 @@ function Histogram({data, xAxisColumn, yAxisColumn, title}) {
             style: {
                 color: '#fff'
             }
-        }
+        },
+        responsive: [{
+            breakpoint: 1024,
+            options: {
+                chart: {
+                    width: '100%',
+                    height: 400
+                }
+            },
+        }]
     }
 
     const series =  [{
@@ -31,7 +40,7 @@ function Histogram({data, xAxisColumn, yAxisColumn, title}) {
     }]
     
     return (
-        <Chart options={options} series={series} type="bar" width={1280} height={420}/>
+        <Chart options={options} series={series} type="bar" width={'50%'} height={520}/>
     )
 }
 

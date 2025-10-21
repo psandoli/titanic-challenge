@@ -19,7 +19,19 @@ function LineGraph({data, xAxisColumn, yAxisColumn, title}) {
         },
         yaxis: {
             decimalsInFloat: false,
-        }
+        },
+        responsive: [{
+            breakpoint: 1024,
+            options: {
+                stroke: {
+                    width: 3
+                },
+                chart: {
+                    width: '100%',
+                    height: 250
+                }
+            },
+        }]
     }
 
     const series =  [{
@@ -31,7 +43,7 @@ function LineGraph({data, xAxisColumn, yAxisColumn, title}) {
     }]
     
     return (
-        <Chart options={options} series={series} type="line" width={1280} height={420}/>
+        <Chart options={options} series={series} type="line" width={'80%'} height={520}/>
     )
 }
 
