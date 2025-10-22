@@ -51,7 +51,7 @@ function Histogram({ data, xAxisColumn, yAxisColumn, title }) {
       options={options}
       series={series}
       type="bar"
-      width={"50%"}
+      width={"80%"}
       height={520}
     />
   )
