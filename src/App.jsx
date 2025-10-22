@@ -34,14 +34,18 @@ function App() {
             data={getFareByAge()}
             xAxisColumn={"Age"}
             yAxisColumn={"Fare"}
-            title={"Passengers Fare by Age"}
+            xAxisTitle={"Age"}
+            yAxisTitle={"Fare"}
+            chartTitle={"Passengers Fare by Age"}
           />
         ) : selectedVisualization === HISTOGRAM ? (
           <Histogram
             data={getSurvivalsPerPClass()}
             xAxisColumn={"Pclass"}
             yAxisColumn={"survivals"}
-            title={"Survivals per passenger class"}
+            xAxisTitle={"Number of Survivals"}
+            yAxisTitle={"Passenger class"}
+            chartTitle={"Survivals per passenger class"}
           />
         ) : (
           <span>Please, select a visualization in the sidebar.</span>

@@ -1,6 +1,13 @@
 import Chart from "react-apexcharts"
 
-function LineGraph({ data, xAxisColumn, yAxisColumn, title }) {
+function LineGraph({
+  data,
+  xAxisColumn,
+  yAxisColumn,
+  xAxisTitle,
+  yAxisTitle,
+  chartTitle,
+}) {
   const options = {
     chart: {
       toolbar: {
@@ -11,8 +18,8 @@ function LineGraph({ data, xAxisColumn, yAxisColumn, title }) {
       curve: "smooth",
     },
     title: {
-      text: title,
-      align: "left",
+      text: chartTitle,
+      align: "center",
       style: {
         color: "#fff",
       },
@@ -20,8 +27,16 @@ function LineGraph({ data, xAxisColumn, yAxisColumn, title }) {
     tooltip: {
       theme: "dark",
     },
+    xaxis: {
+      title: {
+        text: xAxisTitle,
+      },
+    },
     yaxis: {
       decimalsInFloat: false,
+      title: {
+        text: yAxisTitle,
+      },
     },
     responsive: [
       {
@@ -41,6 +56,7 @@ function LineGraph({ data, xAxisColumn, yAxisColumn, title }) {
 
   const series = [
     {
+      name: yAxisTitle,
       data,
       parsing: {
         x: xAxisColumn,

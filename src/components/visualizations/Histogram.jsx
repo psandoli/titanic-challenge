@@ -1,6 +1,13 @@
 import Chart from "react-apexcharts"
 
-function Histogram({ data, xAxisColumn, yAxisColumn, title }) {
+function Histogram({
+  data,
+  xAxisColumn,
+  yAxisColumn,
+  xAxisTitle,
+  yAxisTitle,
+  chartTitle,
+}) {
   const options = {
     chart: {
       toolbar: {
@@ -14,14 +21,24 @@ function Histogram({ data, xAxisColumn, yAxisColumn, title }) {
       },
     },
     title: {
-      text: title,
-      align: "left",
+      text: chartTitle,
+      align: "center",
       style: {
         color: "#fff",
       },
     },
     tooltip: {
       enabled: false,
+    },
+    xaxis: {
+      title: {
+        text: xAxisTitle,
+      },
+    },
+    yaxis: {
+      title: {
+        text: yAxisTitle,
+      },
     },
     responsive: [
       {
