@@ -21,7 +21,7 @@ function Histogram({ data, xAxisColumn, yAxisColumn, title }) {
       },
     },
     tooltip: {
-      theme: "dark",
+      enabled: false,
     },
     responsive: [
       {
