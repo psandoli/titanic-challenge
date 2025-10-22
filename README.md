@@ -16,3 +16,12 @@ Run the following command to run the project locally with Vite and access the UR
 ```bash
 npm run dev
 ```
+
+## Improvements
+
+Possible improvements for future implementation.
+
+- Add pagination to Table component for better visualization
+- Make columns titles "better to read" on Table component (maybe tooltips with columns description)
+- Provide insights about the visualizations data instead of simply displaying it
+
