@@ -21,7 +21,7 @@ function Sidebar({ chooseVisualization }) {
   return (
     <div className="sidebar">
       <div
-        className={`sidebar-button ${isSidebarOpen ? "open" : "closed"}`}
+        className="sidebar-button"
         name="open-sidebar"
         onClick={handleSidebarClick}
       >

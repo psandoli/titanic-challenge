@@ -17,10 +17,6 @@
   padding: 0 8px;
 }
 
-.open svg {
-  transform: rotateX(180deg);
-}
-
 .sidebar-options-outter {
   position: absolute;
   height: 100vh;
