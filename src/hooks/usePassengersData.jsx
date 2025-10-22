@@ -3,6 +3,13 @@ import jsonFile from "./../data/passengers.json"
 export const usePassengersData = () => {
   const data = jsonFile
 
+  const formattedData = data?.map((row) => {
+    return {
+      ...row,
+      Survived: row?.Survived === 1 ? "Yes" : "No",
+    }
+  })
+
   const getFareByAge = () => {
     const groupByAge = data.reduce((passengers, passenger) => {
       const age = Math.round(passenger.Age)
@@ -43,7 +50,7 @@ export const usePassengersData = () => {
   }
 
   return {
-    data,
+    formattedData,
     getFareByAge,
     getSurvivalsPerPClass,
   }

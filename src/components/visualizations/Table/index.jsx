@@ -16,7 +16,7 @@ function Table({ data }) {
         {data?.map((row) => (
           <tr>
             {Object.values(row)?.map((value) => (
-              <td>{value}</td>
+              <td>{value || "-"}</td>
             ))}
           </tr>
         ))}

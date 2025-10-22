@@ -12,7 +12,8 @@ const LINE_GRAPH = "lineGraph"
 const HISTOGRAM = "histogram"
 
 function App() {
-  const { data, getFareByAge, getSurvivalsPerPClass } = usePassengersData()
+  const { formattedData, getFareByAge, getSurvivalsPerPClass } =
+    usePassengersData()
   const [selectedVisualization, setSelectedVisualization] = useState("")
 
   const scrollToTop = () => {
@@ -27,7 +28,7 @@ function App() {
       <Sidebar chooseVisualization={setSelectedVisualization} />
       <div className="details">
         {selectedVisualization === TABLE ? (
-          <Table data={data} />
+          <Table data={formattedData} />
         ) : selectedVisualization === LINE_GRAPH ? (
           <LineGraph
             data={getFareByAge()}
