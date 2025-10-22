@@ -43,8 +43,8 @@ function App() {
             data={getSurvivalsPerPClass()}
             xAxisColumn={"Pclass"}
             yAxisColumn={"survivals"}
-            xAxisTitle={"Number of Survivals"}
-            yAxisTitle={"Passenger class"}
+            xAxisTitle={"Passenger class"}
+            yAxisTitle={"Number of Survivals"}
             chartTitle={"Survivals per passenger class"}
           />
         ) : (
