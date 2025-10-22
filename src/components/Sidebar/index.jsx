@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "./styles.css"
-import { SidebarIcon } from "../../assets/icons/Sidebar.jsx"
+import { SidebarIcon, CloseIcon } from "../../assets/icons/Sidebar.jsx"
 
 const TABLE = "table"
 const LINE_GRAPH = "lineGraph"
@@ -25,7 +25,7 @@ function Sidebar({ chooseVisualization }) {
         name="open-sidebar"
         onClick={handleSidebarClick}
       >
-        <SidebarIcon />
+        {!isSidebarOpen ? <SidebarIcon /> : <CloseIcon />}
         <span>Select visualization</span>
       </div>
       {isSidebarOpen && (
